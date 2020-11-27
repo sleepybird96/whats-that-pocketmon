@@ -12,7 +12,7 @@ body {
 footer {
   position: absolute;
   left: 43%;
-  bottom: 3%;
+  bottom: 0%;
 }
 
 .dropZone {
@@ -38,4 +38,139 @@ footer {
 .quest {
   width: 100%;
   height: 100%;
+}
+
+.dragZone {
+  background-color: gray;
+  position: relative;
+  height: 30vh;
+  width: 100%;
+}
+h1 {
+  font-size: 1.6rem;
+  float: right;
+}
+.answerZone{
+  position: absolute;
+  overflow: hidden;
+  left: 41%;
+  width: 18%;
+  height: 70%;
+}
+.answerFilm {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.answer {
+  height: 100%;
+  width: 100%;
+}
+
+#leftArrow {
+  background: none;
+  border: none;
+  outline: none;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  font-size: 5rem;
+  height: 30%;
+  width: 15%;
+  top: 35%;
+  left: 20%;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+#leftArrow:hover{
+  color:white;
+}
+
+#rightArrow {
+  background: none;
+  border: none;
+  outline: none;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  font-size: 5rem;
+  height: 30%;
+  width: 15%;
+  top: 35%;
+  right: 20%;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+#rightArrow:hover{
+  color:white;
+}
+#modal{
+  display: none;
+  position: fixed;
+  text-align: center;
+  background-color: rgba(35, 35, 36, 0.9);
+  z-index: 3;
+  height: 50%;
+  width: 100%;
+  top: 20%;
+  left: 0%;
+  opacity: 0;
+  transition: 500ms;
+}
+#modalBackground{
+  display: none;
+  position: fixed;
+  background-color: rgb(170, 167, 175, 0.2);
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+.fact {
+  width: 30%;
+  height: 50%;
+  transition: 500ms;
+}
+.realFact {
+  position: absolute;
+  width: 30%;
+  height: 50%;
+  right: 35%;
+  transition: 700ms;
+  opacity: 0;
+}
+h2 {
+  font-size: 1.8rem;
+  color: white;
+}
+h3 {
+  font-size: 2.2rem;
+  color: white;
+}
+strong {
+  transition: 500ms;
+  font-size: 2.4rem;
+  color: yellow;
+  opacity: 0;
+}
+#gameStart{
+  display: grid;
+  color: white;
+  place-items: center;
+  position: fixed;
+  text-align: center;
+  background-color: rgba(35, 35, 36, 0.9);
+  z-index: 3;
+  height: 50%;
+  width: 100%;
+  top: 20%;
+  left: 0%;
+  transition: 500ms;
+}
+a{
+  font-size: 5rem;
+  cursor: pointer;
+}
+a:hover {
+  color: yellow;
 }

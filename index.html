@@ -7,28 +7,41 @@
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 <body>
+  <audio id="myAudio">
+    <source src="what.mp3" type="audio/mpeg">
+    </audio>  
   <section class='dropZone'>
     <img class="dropBackground" src="img/background.png">
     <div class="questZone">
-        <img class="quest" src="img/question/고우스트.png">
-        <img class="quest" src="img/question/뮤츠.png">
-        <img class="quest" src="img/question/야옹.png">
-        <img class="quest" src="img/question/팬텀.png">
-        <img class="quest" src="img/question/피죤.png">
+        <img class="quest" src="img/question/ghost.png">
+        <img class="quest" src="img/question/mutes.png">
+        <img class="quest" src="img/question/cat.png">
+        <img class="quest" src="img/question/phantom.png">
+        <img class="quest" src="img/question/pigeon.png">
     </div>
   </section>
   <section class='dragZone'>
+    <button id = 'leftArrow'>&lt;</button>
+    <button id = 'rightArrow'>&gt;</button>
+    <h1>질문에 해당하는 포켓몬을</br> 드래그&드롭하세요!</h1>
     <div class='answerZone'>
       <div class="answerFilm">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
+        <img class="answer" src="img/answer/mutes.png">
+        <img class='answer' src="img/answer/cat.png">
+        <img class='answer' src="img/answer/phantom.png">
+        <img class='answer' src="img/answer/ghost.png">
+        <img class='answer' src="img/answer/pigeon.png">
       </div>
     </div>
   </section>
-  <footer>&copy; sleepybird X cogong</footer>
+  <div id="modal">
+    <h2>정답입니다!</h2>
+    <h3>정답은 <strong>피카츄</strong></h3>
+    <img class="fact">
+    <img class="realFact">
+  </div>
+  <div id="gameStart"><a>시작하려면 누르세요!</a></div>
+  <footer>&copy; sleepybird X kogong</footer>
   <script src="script.js"></script>
 </body>
 </html>
