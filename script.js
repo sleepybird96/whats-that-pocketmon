@@ -115,8 +115,8 @@ questZone.ondrop = function(){
       modal.style.display = 'grid';
       modal.style.opacity = '1';
       modal.style.placeItems = 'center'
-      document.querySelector('h2').textContent = '모든 문제를 다 맞추셨습니다!'
-      document.querySelector('h3').textContent = '축하드립니다!'
+      document.querySelector('h2').textContent = '더이상 풀 문제가 없습니다!'
+      document.querySelector('h3').textContent = '고생하셨습니다!'
       realFact.style.display = 'none';
       fact.style.display = 'none';
     }, 4200); 
